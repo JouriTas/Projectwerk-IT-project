@@ -2,7 +2,27 @@
 
 # What to do
 
-1) Oplijsten van het benodigde materiaal(20 x Severs, 20 x Routers, 20 x switchen en 20 x Acces Points)
+1) Te voorzien materiaal
+	- Switches
+		- 1 per lokaal
+		- Voorziet internet voor 20 tafels
+	- Access points
+		- 1 per lokaal
+	- Vlans
+		- 1 per access point
+		- 1 per lokaal (zonder AP)
+	- Routers
+		- 1 per vestigingsplaats
+		- Verbonden met alle lokalen
+	- Servers
+		- 1 per vestigingsplaats
+		- Ubuntu
+		- Met Moodle ELO
+	- API
+		- Studentengegevens 's nachts opvragen uit centrale 		  server en importeren in lokale
+			- Alleen van vestigingsplaats
+		- Uitgeschreven studenten verwijderen
+
 2) IP-Adresseringsschema opmaken per vestigingsplaats, 2 vlan's per plaats.
 3) Netwerktopolgy uittekenen 
 3) Op zoek gaan naar de benodigde software/tools voor de automatisering:
