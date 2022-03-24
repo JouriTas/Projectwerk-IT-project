@@ -19,7 +19,7 @@
 		- Ubuntu
 		- Met Moodle ELO
 	- API
-		- Studentengegevens 's nachts opvragen uit centrale 		  server en importeren in lokale
+		- Studentengegevens 's nachts opvragen uit centrale server en importeren in lokale server
 			- Alleen van vestigingsplaats
 		- Uitgeschreven studenten verwijderen
 
