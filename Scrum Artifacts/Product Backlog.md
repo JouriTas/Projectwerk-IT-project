@@ -2,7 +2,7 @@
 
 # What to do
 
-1) Te voorzien materiaal
+1) Te voorziene materiaal
 	- Switches
 		- 1 per lokaal
 		- Voorziet internet voor 20 tafels
