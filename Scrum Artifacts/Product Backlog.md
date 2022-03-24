@@ -24,11 +24,24 @@
 		- Uitgeschreven studenten verwijderen
 
 2) IP-Adresseringsschema opmaken per vestigingsplaats, 2 vlan's per plaats.
+
 3) Netwerktopolgy uittekenen 
+
 3) Op zoek gaan naar de benodigde software/tools voor de automatisering:
 	-	Python3
 	-	Api's
 	-	Docker
 	-	Postman API Platform
-	-	
+	
+	Automation Tools:
+	-	Ansible
+	-	Puppet
+	-	Chef
+	
+4) Voorbereiding project x(15 juni) - 1 week
+	-	sprint van één week
+	-	PDF formaat
+	
+5) Voorstelling jury en verdeding van project 15 juni 2022 18u.
+
 	
