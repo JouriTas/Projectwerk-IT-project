@@ -1,6 +1,6 @@
 # Sprint planning 
 
-IP-adresseringschema + topologie uittekenen => Jouri
+IP-adresseringschema + topologie uittekenen(visio) => Jouri
 
 Overzicht benodigdheden serverinstallatie (met Moodle ELO) => Daniel
 
