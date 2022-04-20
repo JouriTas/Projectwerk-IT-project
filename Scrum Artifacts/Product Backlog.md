@@ -2,6 +2,21 @@
 
 # What to do
 
+Sprint 1 - 22/04/2022 - 29/04/2022
+
+Sprint 2 - 29/04/2022 - 06/05/2022
+
+Sprint 3 - 06/05/2022 - 13/05/2022
+
+Sprint 4 - 13/05/2022 - 20/05/2022
+
+Sprint 5 - 20/05/2022 - 27/05/2022
+
+Sprint 6 - 27/05/2022 - 03/06/2022
+
+Sprint 7 - 03/06/2022 - 10/06/2022
+
+
 1) Te voorziene materiaal
 	- Switches
 		- 1 per lokaal
