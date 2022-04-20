@@ -4,25 +4,31 @@
 
 # Sprint 1 - 22/04/2022 - 29/04/2022
 
--	Opstellen ip-adresseringschema
+-	Script opstellen ip-adresseringschema
 -	Uittekenen topologie, in kaart voorstelling maken van wat waar nodig is
+
 
 # Sprint 2 - 29/04/2022 - 06/05/2022
 
-Script voor de hardware:
--	Bepalen Vlan's per vestigingsplaats
--	Switches configureren via ensible
+Script voor de hardware adhv ip-adresseringschema =>
+
+-	Bepalen 2 Vlan's per vestigingsplaats
+-	Switches configureren via ansible
+-	Routers, Access points
+-	Security
 
 # Sprint 3 - 06/05/2022 - 13/05/2022
 
 Script voor de software:
--	Pc's, welke software nodig.
+
+-	Pc's, welke software nodig. (OS-deployment)
+- 	Installatie basissoftware
 -	Servers configureren, Ubuntu(Moodle - ELO)
 
 
 # Sprint 4 - 13/05/2022 - 27/05/2022
 
-Via docker software installeren op de end devices:
+Via docker software installeren op de end-devices:
 
 Creëren =>
 
@@ -33,8 +39,10 @@ Creëren =>
 
 # Sprint 5 - 27/05/2022 - 03/06/2022
 
--
--
+API aanmaken =>
+
+-	Studentengegevens (van vestigingsplaats) ’s nachts opvragen uit centrale server en importeren in lokale server
+-	Uitgeschreven studenten verwijderen
 
 
 # Sprint 6 - 03/06/2022 - 10/06/2022
@@ -46,7 +54,7 @@ Documentatie: Dossier samenstellen en PowerPoint maken van de opdracht.
 
 
 
---------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------
 
 
 
