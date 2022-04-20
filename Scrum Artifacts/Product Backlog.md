@@ -4,6 +4,8 @@
 
 Sprint 1 - 22/04/2022 - 29/04/2022
 
+Opstellen ip-adresseringschema.
+
 Sprint 2 - 29/04/2022 - 06/05/2022
 
 Sprint 3 - 06/05/2022 - 13/05/2022
@@ -13,6 +15,10 @@ Sprint 4 - 13/05/2022 - 27/05/2022
 Sprint 5 - 27/05/2022 - 03/06/2022
 
 Sprint 6 - 03/06/2022 - 10/06/2022
+
+Documentatie: Dossier samenstellen en PowerPoint maken van de opdracht.
+
+
 
 
 1) Te voorziene materiaal
