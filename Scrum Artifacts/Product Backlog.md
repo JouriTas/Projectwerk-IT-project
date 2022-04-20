@@ -8,7 +8,7 @@
 -	Uittekenen topologie, in kaart voorstelling maken van wat waar nodig is
 
 
-# Sprint 2 - 29/04/2022 - 06/05/2022
+# Sprint 2 - 29/04/2022 - 13/05/2022
 
 Script voor de hardware adhv ip-adresseringschema =>
 
@@ -17,7 +17,7 @@ Script voor de hardware adhv ip-adresseringschema =>
 -	Routers, Access points
 -	Security
 
-# Sprint 3 - 06/05/2022 - 13/05/2022
+# Sprint 3 - 13/05/2022 - 20/05/2022
 
 Script voor de software:
 
@@ -26,7 +26,7 @@ Script voor de software:
 -	Servers configureren, Ubuntu(Moodle - ELO)
 
 
-# Sprint 4 - 13/05/2022 - 27/05/2022
+# Sprint 4 - 20/05/2022 - 27/05/2022
 
 Via docker software installeren op de end-devices:
 
