@@ -23,7 +23,9 @@ Script voor de software:
 Sprint 4 - 13/05/2022 - 27/05/2022
 
 Via docker software installeren op de end devices:
-Creëren:
+
+Creëren =>
+
 -	Docker file
 -	Docker image
 -	Docker container
