@@ -11,7 +11,7 @@ Sprint 2 - 29/04/2022 - 06/05/2022
 
 Script voor de hardware:
 -	Bepalen Vlan's per vestigingsplaats
--	Switches via ensible
+-	Switches configureren via ensible
 
 Sprint 3 - 06/05/2022 - 13/05/2022
 
@@ -41,6 +41,10 @@ Documentatie: Dossier samenstellen en PowerPoint maken van de opdracht.
 
 
 ## Reserve momenteel van 9% 5/54 dagen
+
+
+
+--------------------------------------------------------------------------------------------------------------------
 
 
 
