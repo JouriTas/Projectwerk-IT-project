@@ -22,7 +22,7 @@ Script voor de hardware adhv ip-adresseringschema =>
 Script voor de software:
 
 -	Pc's, welke software nodig. (OS-deployment)
-- 	Installatie basissoftware
+- 	Installatie basissoftware (voorbereiden)
 -	Servers configureren, Ubuntu(Moodle - ELO)
 
 
