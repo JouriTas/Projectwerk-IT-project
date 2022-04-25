@@ -7,10 +7,11 @@
 
 Planning sprint_1:
 
-Adresseringschema manueel VLSM (Excel) => (Daniel)
+## Adresseringschema manueel VLSM (Excel) => (Daniel)
+
 Script => (William en Jouri)
 
-Input:
+*	Input:
 
 Aantal lokalen per vestigingsplaats
 Netwerkadres
@@ -22,7 +23,7 @@ Acces-points 1 per lokaal(max 4)
 1 Server
 Max 20 hosts
 
-Output:
+*	Output:
 
 Per device:
 Ip-adres
@@ -33,7 +34,7 @@ Voor de hosts:
 Range via dhcp
 
 
-Topologie => (Jouri)
+## Topologie => (Jouri)
 
 In een visio schema:
 
