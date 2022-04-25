@@ -1,4 +1,4 @@
-# Sprint_1 22/04/2022 - 29/04/2022
+# Sprint1_Backlog 22/04/2022 - 29/04/2022
 
 - Script opstellen ip-adresseringschema
 - Uittekenen topologie, in kaart voorstelling maken van wat waar nodig is
@@ -53,5 +53,5 @@ Gegevens die nodig zijn
 
 
 
-### DAILY Meeting 27/04/2022 18u
+### DAILY Meeting stavaza 27/04/2022 18u
 
