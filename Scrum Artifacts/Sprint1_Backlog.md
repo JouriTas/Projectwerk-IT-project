@@ -19,8 +19,8 @@ Input:
 Script berekening
 
 - 1 Router
-- Switches 1 per lokaal(max 4) + 1 als er meer dan 4 lokalen zijn
-- Acces-points 1 per lokaal(max 4) 
+- 1 Switch per lokaal(max 4) + 1 als er meer dan 4 lokalen zijn
+- 1 Acces-points per lokaal(max 4) 
 - 1 Server
 - Max 20 hosts
 
@@ -37,11 +37,11 @@ Voor de hosts
 - Range via dhcp
 
 
-## Topologie => (Jouri)
+Topologie => (Jouri)
 
 In een visio schema:
 
-Gegevens die nodig zijn;
+Gegevens die nodig zijn
 
 - Router
 - Switches
