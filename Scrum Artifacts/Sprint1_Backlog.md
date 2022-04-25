@@ -11,24 +11,24 @@ Adresseringschema manueel VLSM (Excel) => (Daniel)
 
 Script => (William en Jouri)
 
-*	Input:
+Input:
 
 Aantal lokalen per vestigingsplaats
 Netwerkadres
 
 
- 1 Router
- Switches 1 per lokaal(max 4) + 1 als er meer dan 4 lokalen zijn
- Acces-points 1 per lokaal(max 4) 
- 1 Server
- Max 20 hosts
+- 1 Router
+- Switches 1 per lokaal(max 4) + 1 als er meer dan 4 lokalen zijn
+- Acces-points 1 per lokaal(max 4) 
+- 1 Server
+- Max 20 hosts
 
-*	Output:
+Output:
 
- Per device:
- Ip-adres
- Subnetmask
- Default Gateway
+- Per device:
+- Ip-adres
+- Subnetmask
+- Default Gateway
 
 Voor de hosts:
 Range via dhcp
