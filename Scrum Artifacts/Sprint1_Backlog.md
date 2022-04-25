@@ -13,9 +13,10 @@ Script => (William en Jouri)
 
 Input:
 
-Aantal lokalen per vestigingsplaats
-Netwerkadres
+- Aantal lokalen per vestigingsplaats
+- Netwerkadres
 
+Script berekening
 
 - 1 Router
 - Switches 1 per lokaal(max 4) + 1 als er meer dan 4 lokalen zijn
@@ -25,25 +26,28 @@ Netwerkadres
 
 Output:
 
-- Per device:
+Per device
+
 - Ip-adres
 - Subnetmask
 - Default Gateway
 
-Voor de hosts:
-Range via dhcp
+Voor de hosts
+
+- Range via dhcp
 
 
 ## Topologie => (Jouri)
 
 In een visio schema:
 
-Gegevens die nodig zijn:
-Router
-Switches
-Acces-points
-Servers
-Type kabels
+Gegevens die nodig zijn;
+
+- Router
+- Switches
+- Acces-points
+- Servers
+- Type kabels
 
 
 
