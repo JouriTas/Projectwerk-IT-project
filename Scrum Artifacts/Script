@@ -1,12 +1,23 @@
+#libraries: er zou een bestaan om met IP-adressen te werken, nog niet getest
+from IPy import IP
+
 #sprint 1
 
 #input
 
-# > aantal lokalen
 # > netwerkadres
+print('Voer een netwerkadres in: ')
+NETADR = input()
+#geldigheid testen met IPy; exception indien ongeldig
+IP(NETADR)
+
+# > aantal lokalen
+print('Voer het aantal lokalen in: ')
+LOKALEN = int(input())
 
 # berekeningen
 
+# > netwerkadres omzetten naar decimaal/binair?
 # > basisadres
 # > aantal benodigde hosts
 # >> 1 (server) + 1 (router) + aantal lokalen * (20 (hosts) + 1 (switch) + 1 (access point)) + 1 backbone switch indien >4 lokalen
