@@ -23,12 +23,13 @@ Script voor de software:
 
 -	Pc's, welke software nodig. (OS-deployment)
 - 	Installatie basissoftware (voorbereiden)
--	Servers configureren, Ubuntu(Moodle - ELO)
 
 
 # Sprint 4 - 20/05/2022 - 27/05/2022
 
 Via docker software installeren op de end-devices:
+
+-	Servers configureren, Ubuntu(Moodle - ELO)
 
 Creëren =>
 
