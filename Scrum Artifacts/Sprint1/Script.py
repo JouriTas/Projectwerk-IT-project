@@ -132,6 +132,7 @@ nwd_ip = {
     "Server" : server_ip,
     "Switch 1": switch1_ip,
     "Access Point 1": ap1_ip
+}
 
 #ip-adressen lokaal 2
 #for i in LOKALEN
