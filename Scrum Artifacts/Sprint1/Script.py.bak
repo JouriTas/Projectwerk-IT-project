@@ -106,7 +106,7 @@ hosts = LOKALEN * 20
 
 # >> 1 (server) + 1 (router) + aantal lokalen * (20 (hosts) + 1 (switch) + 1 (access point)) + 1 backbone switch indien >4 lokalen
 # > subnets berekenen
-#subnets = bereken_subnets(netadr_dec)
+subnets = bereken_subnets(netadr_dec)
 
 # ip-adressen toewijzen
 
