@@ -19,10 +19,10 @@ Input:
 Output:
 
 Een script dat een adresseringschema weergeeft op basis van de input,
-het aantal lokalen en het netwerkadres
+het aantal lokalen en het netwerkadres.
 
 
-Script ip-adres berekening
+Script ip-adres berekening voor volgende devices:
 
 - 1 Router
 - 1 Switch per lokaal(max 4) + 1 als er meer dan 4 lokalen zijn
@@ -35,16 +35,9 @@ Topologie => (Jouri)
 
 In een visio schema:
 
-Gegevens die nodig zijn
-
-- Router
-- Switches
-- Acces-points
-- Servers
-- Type kabels
+De visule weergave van een vestigingsplaats uittekenen 
 
 
 
 
-### DAILY Meeting stavaza 27/04/2022 18u
 

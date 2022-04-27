@@ -72,14 +72,14 @@ sn_masks_ip = {
 
 # > netwerkadres
 print('Voer een netwerkadres in: ')
-NETADR = raw_input()
+NETADR = input()
 #test zonder input te vragen
 #NETADR = "192.168.0.1"
 #geldigheid testen
 
 # > aantal lokalen
 print('Voer het aantal lokalen in: ')
-LOKALEN = int(raw_input())
+LOKALEN = int(input())
 #test zonder input te vragen
 #LOKALEN = 1
 
