@@ -18,15 +18,8 @@ Input:
 
 Output:
 
-Per device
-
-- Ip-adres
-- Subnetmask
-- Default Gateway
-
-Voor de hosts
-
-- Range via dhcp
+Een script dat een adresseringschema weergeeft op basis van de input,
+het aantal lokalen en het netwerkadres
 
 
 Script ip-adres berekening
