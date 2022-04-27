@@ -134,14 +134,18 @@ nwd_ip = {
     "Access Point 1": ap1_ip
 
 #ip-adressen lokaal 2
-#for i in LOKALEN
-#    nwd_ip["Switch 2"] : IP_Adres().get_dotted(subnets[1] + 1)
-#    nwd_ip["Access Point 2"] : IP_Adres().get_dotted(subnets[1] + 2)
-#    for i in range(hosts):
-#        hosts2_ip["host{0}".format(i)] = IP_Adres().get_dotted(subnets[0] + 3 + i)      
+if LOKALEN == 2:
+    switch2_ip = IP_Adres().get_dotted(subnets[1] + 1)
+    nwd_ip["Switch 2"] : switch2_ip
+    ap2_ip = IP_Adres().get_dotted(subnets[1] + 2)
+    nwd_ip["Access Point 2"] : ap2_ip
+    for i in range(hosts):
+        hosts2_ip["host{0}".format(i)] = IP_Adres().get_dotted(subnets[0] + 3 + i)      
 
 # output
 
+
+}
 # > range voor de hosts
 # > subnet mask
 # > default gateway
