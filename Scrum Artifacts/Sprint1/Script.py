@@ -106,7 +106,7 @@ hosts = LOKALEN * 20
 
 # >> 1 (server) + 1 (router) + aantal lokalen * (20 (hosts) + 1 (switch) + 1 (access point)) + 1 backbone switch indien >4 lokalen
 # > subnets berekenen
-#subnets = bereken_subnets(netadr_dec)
+subnets = bereken_subnets(netadr_dec)
 
 # ip-adressen toewijzen
 
@@ -123,13 +123,7 @@ ap1_ip = IP_Adres().get_dotted(subnets[0] + 5)
 # > 6: hosts lokaal 1
 hosts1_ip = {}
 for i in range(hosts):
-    hosts1_ip["host{0}".format(i)] = IP_Adres().get_dotted(subnets[0] + 6 + i+1)
-
-#if LOKALEN > 1: 
-#    for i in range(LOKALEN):
-            
-
-# output
+    hosts1_ip["host{0}".format(i)] = IP_Adres().get_dotted(subnets[0] + 6 + i)
 
 # > ip-adres per netwerkdevices
 nwd_ip = {
@@ -138,7 +132,16 @@ nwd_ip = {
     "Server" : server_ip,
     "Switch 1": switch1_ip,
     "Access Point 1": ap1_ip
-}
+
+#ip-adressen lokaal 2
+#for i in LOKALEN
+#    nwd_ip["Switch 2"] : IP_Adres().get_dotted(subnets[1] + 1)
+#    nwd_ip["Access Point 2"] : IP_Adres().get_dotted(subnets[1] + 2)
+#    for i in range(hosts):
+#        hosts2_ip["host{0}".format(i)] = IP_Adres().get_dotted(subnets[0] + 3 + i)      
+
+# output
+
 # > range voor de hosts
 # > subnet mask
 # > default gateway

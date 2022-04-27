@@ -123,13 +123,7 @@ ap1_ip = IP_Adres().get_dotted(subnets[0] + 5)
 # > 6: hosts lokaal 1
 hosts1_ip = {}
 for i in range(hosts):
-    hosts1_ip["host{0}".format(i)] = IP_Adres().get_dotted(subnets[0] + 6 + i+1)
-
-#if LOKALEN > 1: 
-#    for i in range(LOKALEN):
-            
-
-# output
+    hosts1_ip["host{0}".format(i)] = IP_Adres().get_dotted(subnets[0] + 6 + i)
 
 # > ip-adres per netwerkdevices
 nwd_ip = {
@@ -138,6 +132,19 @@ nwd_ip = {
     "Server" : server_ip,
     "Switch 1": switch1_ip,
     "Access Point 1": ap1_ip
+
+#ip-adressen lokaal 2
+if LOKALEN == 2:
+    switch2_ip = IP_Adres().get_dotted(subnets[1] + 1)
+    nwd_ip["Switch 2"] : switch2_ip
+    ap2_ip = IP_Adres().get_dotted(subnets[1] + 2)
+    nwd_ip["Access Point 2"] : ap2_ip
+    for i in range(hosts):
+        hosts2_ip["host{0}".format(i)] = IP_Adres().get_dotted(subnets[0] + 3 + i)      
+
+# output
+
+
 }
 # > range voor de hosts
 # > subnet mask
