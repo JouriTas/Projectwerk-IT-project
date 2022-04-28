@@ -81,7 +81,7 @@ NETADR = input()
 print('Voer het aantal lokalen in: ')
 LOKALEN = int(input())
 #test zonder input te vragen
-#LOKALEN = 1
+#LOKALEN = 2
 
 # berekeningen
 
@@ -101,15 +101,15 @@ netadr_dec = IP_Adres().set_dotted(NETADR)
 # > basisadres
 basisadres = network(NETADR, sn_mask)
 
-# > aantal benodigde hosts
-hosts = LOKALEN * 20
+# > te voorzien aantal hosts per lokaal
+aantal_hosts = 20
 
 # >> 1 (server) + 1 (router) + aantal lokalen * (20 (hosts) + 1 (switch) + 1 (access point)) + 1 backbone switch indien >4 lokalen
 # > subnets berekenen
 subnets = bereken_subnets(netadr_dec)
 
 # ip-adressen toewijzen
-
+adressen = {}
 # > 1: router
 router_ip = IP_Adres().get_dotted(subnets[0] + 1)
 # > 2: backbone switch
@@ -117,25 +117,50 @@ bb_switch_ip = IP_Adres().get_dotted(subnets[0] + 2)
 # > 3: server
 server_ip = IP_Adres().get_dotted(subnets[0] + 3)
 # > 4: switch lokaal 1
-switch1_ip = IP_Adres().get_dotted(subnets[0] + 4)
+#switch1_ip = IP_Adres().get_dotted(subnets[0] + 4)
 # > 5: access point lokaal 1
-ap1_ip = IP_Adres().get_dotted(subnets[0] + 5)
+#ap1_ip = IP_Adres().get_dotted(subnets[0] + 5)
 # > 6: hosts lokaal 1
-hosts1_ip = {}
-for i in range(hosts):
-    hosts1_ip["host{0}".format(i)] = IP_Adres().get_dotted(subnets[0] + 6 + i)
+#hosts1_ip = {}
+#for i in range(aantal_hosts):
+#    hosts1_ip["host{0}".format(i)] = IP_Adres().get_dotted(subnets[0] + 6 + i)
 
-# > ip-adres per netwerkdevices
-nwd_ip = {
-    "Router" : router_ip,
-    "Backbone switch" : bb_switch_ip,
-    "Server" : server_ip,
-    "Switch 1": switch1_ip,
-    "Access Point 1": ap1_ip
-}
+# > ip-adres per netwerkdevice
+#lokaal1_ip = {
+#    "name" : "Leslokaal 1",
+#    "short_name" : "Lokaal1",
+#    "gateway" : router_ip,
+#    "network_address" : network,
+#    "network_mask" : sn_mask,
+#    "backbone" : bb_switch_ip,
+#    "server" : server_ip,
+#    "switch": switch1_ip,
+#    "ap": ap1_ip,
+#    "hosts": hosts1_ip
+#}
+#ip-adressen extra lokalen
+for i in range(LOKALEN):
+    j = i + 1
+    h = i
+    
+#hosts
+    hosts_ip = []
+    for i in range(aantal_hosts):
+        hosts_ip.append(IP_Adres().get_dotted(subnets[h] + 6 + i))
 
-#ip-adressen lokaal 2
-#for i in LOKALEN
+#andere instellingen    
+    adressen["lokaal{0}_ip".format(j)] = {
+    "name" : "Leslokaal {0}".format(j),
+    "short_name" : "Lokaal{0}".format(j),
+    "gateway" : router_ip,
+    "backbone" : bb_switch_ip,
+    "server" : server_ip,
+    "network_address" : network,
+    "network_mask" : sn_mask,
+    "switch" : IP_Adres().get_dotted(subnets[h] + 1),
+    "ap" : IP_Adres().get_dotted(subnets[h] + 2),
+    "hosts" : hosts_ip
+    }
 #    nwd_ip["Switch 2"] : IP_Adres().get_dotted(subnets[1] + 1)
 #    nwd_ip["Access Point 2"] : IP_Adres().get_dotted(subnets[1] + 2)
 #    for i in range(hosts):
@@ -147,8 +172,5 @@ nwd_ip = {
 # > subnet mask
 # > default gateway
 
-# prints voor tests
-print("IP-adressen netwerkdevices: ", nwd_ip)
-print("IP-adressen hosts lokaal 1: ", hosts1_ip)
-print("Het subnetmask is: ", sn_mask)
-print("De default gateway is: ", nwd_ip["Router"])
+# test
+print("Instellingen: ", adressen)
