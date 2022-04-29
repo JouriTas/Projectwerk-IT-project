@@ -5,7 +5,7 @@
 
 # Definition of done
 
-Planning sprint_1:
+Planning sprint1:
 
 IP-Adresseringschema manueel VLSM (Excel) => (Daniel)
 
@@ -24,6 +24,7 @@ het aantal lokalen en het netwerkadres.
 
 Script ip-adres berekening voor volgende devices:
 
+- Netwerkadressen voor alle subnets
 - 1 Router
 - 1 Switch per lokaal(max 4) + 1 als er meer dan 4 lokalen zijn
 - 1 Acces-points per lokaal(max 4) 
@@ -31,13 +32,10 @@ Script ip-adres berekening voor volgende devices:
 - Max 20 hosts
 
 
+
 Topologie => (Jouri)
 
 In een visio schema:
 
-De visule weergave van een vestigingsplaats uittekenen 
-
-
-
-
+De visuele weergave van een vestigingsplaats uittekenen.
 
