@@ -2,10 +2,10 @@
 
 Script voor de hardware adhv ip-adresseringschema =>
 
--	Bepalen 2 Vlan's per vestigingsplaats
+-	Bepalen Vlan's per lokaal  + 1 voor de acces-point switch
 -	Switches configureren via ansible
--	Routers, Access points
--	Security
+-	Routers => basisconfig router
+-	HTML weergave output scripts
 
 # Definition of done
 
@@ -16,10 +16,12 @@ Planning Sprint2:
 
 
 -	In een YAML bestand de configuratie uitwerken voor de router en de switchen
-	en via ensible toepassen
+	en via ensible toepassen, telnet acces
+	Testen in packet tracer zowel voor de switch als voor de router
+	
+	
+-	Routers => Basisconfig maken in ansible, zonder vlan's, enkel telnet acces
 
 
--	Een basis config schrijven voor de acces-points en via ensible toepassen
+-	HTML weergave output van de scripts, weergave adressering per device/categorie 
 
-
--	Security toepassen zodat de devices via SHH key authentication worden beveiligd
