@@ -23,5 +23,21 @@ Planning Sprint2:
 -	Routers => Basisconfig maken in ansible, zonder vlan's, enkel telnet acces
 
 
--	HTML weergave output van de scripts, weergave adressering per device/categorie 
+-	HTML weergave output van de scripts, weergave adressering per device/categorie
+
+# Planning
+
+Vlan-berekening: Daniel en William
+Aanzet html-weergave: Jouri
+Bijwerken topologie: Jouri
+Basisconfig ansible
+Aanvulling script
+	Foutdetectie input
+	Vlan-berekening
+	Berekeningen herschrijven
+		1 IP-adres per routerpoort
+		1 switch (PoE) voor de APs
+		Max. 8 lokalen
+	Ansible-script genereren
+
 
