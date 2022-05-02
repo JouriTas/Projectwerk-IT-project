@@ -27,7 +27,7 @@ Planning Sprint2:
 
 # Planning
 
-Vlan-berekening: Daniel en William
+Vlan-berekening: Daniël en William
 
 Aanzet html-weergave: Jouri
 
