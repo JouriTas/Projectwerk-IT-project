@@ -1,5 +1,8 @@
 #sprint 1
 #class voor conversie van IP-formaat
+from distutils.command.config import config
+
+
 class IP_Adres:
   def __init__(self):
     self._decimaal = 0
@@ -71,8 +74,10 @@ sn_masks_ip = {
 #input
 
 # > netwerkadres
+
 print('Voer een netwerkadres in: ')
 NETADR = input()
+
 #test zonder input te vragen
 #NETADR = "192.168.0.1"
 #geldigheid testen
@@ -80,6 +85,15 @@ NETADR = input()
 # > aantal lokalen
 print('Voer het aantal lokalen in: ')
 LOKALEN = int(input())
+
+if LOKALEN > 8:
+  print("U kunt maximaal 8 lokalen configureren")
+  
+elif LOKALEN <= 0:
+  print("Voer minstens 1 lokaal in (maximaal 8 lokalen)")
+  
+else:
+
 #test zonder input te vragen
 #LOKALEN = 2
 
@@ -148,7 +162,8 @@ for i in range(LOKALEN):
     for i in range(aantal_hosts):
         hosts_ip.append(IP_Adres().get_dotted(subnets[h] + 6 + i))
 
-#andere instellingen    
+#andere instellingen
+
     adressen["lokaal{0}_ip".format(j)] = {
     "name" : "Leslokaal {0}".format(j),
     "short_name" : "Lokaal{0}".format(j),
@@ -161,6 +176,7 @@ for i in range(LOKALEN):
     "ap" : IP_Adres().get_dotted(subnets[h] + 2),
     "hosts" : hosts_ip
     }
+
 #    nwd_ip["Switch 2"] : IP_Adres().get_dotted(subnets[1] + 1)
 #    nwd_ip["Access Point 2"] : IP_Adres().get_dotted(subnets[1] + 2)
 #    for i in range(hosts):
