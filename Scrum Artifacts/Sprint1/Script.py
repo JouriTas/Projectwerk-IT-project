@@ -1,6 +1,7 @@
 #sprint 1
 #class voor conversie van IP-formaat
 from distutils.command.config import config
+import re
 
 
 class IP_Adres:
@@ -85,14 +86,6 @@ NETADR = input()
 # > aantal lokalen
 print('Voer het aantal lokalen in: ')
 LOKALEN = int(input())
-
-if LOKALEN > 8:
-  print("U kunt maximaal 8 lokalen configureren")
-  
-elif LOKALEN <= 0:
-  print("Voer minstens 1 lokaal in (maximaal 8 lokalen)")
-  
-else:
 
 #test zonder input te vragen
 #LOKALEN = 2
@@ -189,4 +182,6 @@ for i in range(LOKALEN):
 # > default gateway
 
 # test
-print("Instellingen: ", adressen)
+# print("Instellingen: ", adressen)
+
+print("\n".join("{}\t{}".format(x, y) for y, x in adressen.items()))
