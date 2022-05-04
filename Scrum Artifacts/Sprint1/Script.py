@@ -76,31 +76,41 @@ sn_masks_ip = {
 
 # > netwerkadres
 
-print('Voer een netwerkadres in: ')
-NETADR = input()
+NETADR = input('Voer een netwerkadres in: ')
 
 #test zonder input te vragen
 #NETADR = "192.168.0.1"
 #geldigheid testen
 
 # > aantal lokalen
-print('Voer het aantal lokalen in: ')
-LOKALEN = int(input())
+
+LOKALEN = int(input('Voer het aantal lokalen in: '))
+
+#LOKALEN = 2
+# Voer maximaal 2 lokalen in en minimum 1 lokaal
+
+if LOKALEN <= 0:
+  print("U kunt minimum 1 lokaal configureren")
+
+elif LOKALEN > 2:
+
+  print("U kunt maximum 2 lokalen configureren")
+else:
+
 
 #test zonder input te vragen
-#LOKALEN = 2
 
 # berekeningen
 
 #subnetmask berekenen
-if LOKALEN == 1:
-    sn_mask = sn_masks_ip[32]
-elif LOKALEN == 2:
-    sn_mask = sn_masks_ip[64]
-elif LOKALEN in range(2, 5):
-    sn_mask = sn_masks_ip[128]
-else:
-    sn_mask = sn_masks_ip[256]
+  if LOKALEN == 1:
+      sn_mask = sn_masks_ip[32]
+  elif LOKALEN == 2:
+      sn_mask = sn_masks_ip[64]
+  elif LOKALEN in range(2, 5):
+      sn_mask = sn_masks_ip[128]
+  else:
+      sn_mask = sn_masks_ip[256]
 
 # > netwerkadres omzetten naar decimaal
 netadr_dec = IP_Adres().set_dotted(NETADR)
