@@ -50,6 +50,8 @@ Aanvulling script
 		1 IP-adres per routerpoort
 	
 		1 switch (PoE) voor de APs
+		
+		Netwerkadres	
 	
 	Ansible-script genereren
 	
