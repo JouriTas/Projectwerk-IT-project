@@ -33,16 +33,18 @@ Aanzet html-weergave: Jouri
 
 Bijwerken topologie: Jouri
 
-Basisconfig ansible
+Basisconfig ansible: Jouri
 
 Aanvulling script
 
-	Foutdetectie input
+	Foutdetectie input: Daniël
 	
-	Vlan-berekening
+	Vlan-berekening: William
 	
 	Berekeningen herschrijven
 	
+		Subnetmask naar /26: William
+		
 		1 IP-adres per routerpoort
 	
 		1 switch (PoE) voor de APs
