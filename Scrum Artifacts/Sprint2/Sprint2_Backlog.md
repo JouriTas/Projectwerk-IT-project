@@ -37,7 +37,7 @@ Basisconfig ansible: Jouri
 
 Aanvulling script
 
-	Foutdetectie input: Daniël
+	Foutdetectie input (max. 8 lokalen, geldig netwerkadres): Daniël
 	
 	Vlan-berekening: William
 	
@@ -48,8 +48,6 @@ Aanvulling script
 		1 IP-adres per routerpoort
 	
 		1 switch (PoE) voor de APs
-		
-		Max. 8 lokalen
 	
 	Ansible-script testen in PT
 	
