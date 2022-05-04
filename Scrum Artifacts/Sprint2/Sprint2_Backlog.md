@@ -51,6 +51,9 @@ Aanvulling script
 		
 		Max. 8 lokalen
 	
+	Ansible-script testen in PT
+	
 	Ansible-script genereren
+	
 
 
