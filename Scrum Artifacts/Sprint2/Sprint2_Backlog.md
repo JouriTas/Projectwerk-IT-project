@@ -35,6 +35,8 @@ Bijwerken topologie: Jouri
 
 Basisconfig ansible: Jouri
 
+Ansible-script testen in PT
+
 Aanvulling script
 
 	Foutdetectie input (max. 8 lokalen, geldig netwerkadres): Daniël
@@ -49,9 +51,9 @@ Aanvulling script
 	
 		1 switch (PoE) voor de APs
 	
-	Ansible-script testen in PT
-	
 	Ansible-script genereren
+	
+	Html-weergave
 	
 
 
