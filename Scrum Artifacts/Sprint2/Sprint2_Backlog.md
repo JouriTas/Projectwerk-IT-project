@@ -27,11 +27,11 @@ Planning Sprint2:
 
 # Planning
 
-Vlan-berekening: Daniël en William
+Vlan-berekening: Daniël en William (done)
 
-Aanzet html-weergave: Jouri
+Aanzet html-weergave: Jouri (done)
 
-Bijwerken topologie: Jouri
+Bijwerken topologie: Jouri (done)
 
 Basisconfig ansible: Jouri
 
@@ -41,7 +41,7 @@ Aanvulling script
 
 	Foutdetectie input (max. 8 lokalen, geldig netwerkadres): Daniël
 	
-	Vlan-berekening: William
+	Vlan-berekening: William (done)
 	
 	Berekeningen herschrijven
 	
@@ -51,7 +51,7 @@ Aanvulling script
 	
 		1 switch (PoE) voor de APs
 		
-		Netwerkadres	
+		Netwerkadres: William (done)
 	
 	Ansible-script genereren
 	
