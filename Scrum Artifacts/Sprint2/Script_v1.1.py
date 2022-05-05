@@ -70,22 +70,24 @@ sn_masks_ip = {
 
 #NETADR = input('Voer een netwerkadres in: ')
 #test zonder input te vragen
+
 NETADR = "192.168.0.1"
 
 # > aantal lokalen
 
 LOKALEN = int(input('Voer het aantal lokalen in: '))
 
-#LOKALEN = 2
-# Voer maximaal 2 lokalen in en minimum 1 lokaal
+#LOKALEN = 1 tot 8
+# Voer maximaal 8 lokalen in en minimum 1 lokaal
 
 if LOKALEN <= 0:
   print("U kunt minimum 1 lokaal configureren")
 
-elif LOKALEN > 2:
+elif LOKALEN > 8:
+  print("U kunt maximum 8 lokalen configureren")
 
-  print("U kunt maximum 2 lokalen configureren")
 else:
+
 
 #subnetmask berekenen
   if LOKALEN == 1:
@@ -97,100 +99,100 @@ else:
   else:
       sn_mask = sn_masks_ip[256]
       
-#subnet ip-buffer
-#voor latere ip-berekeningen in andere subnets
-#prefix /26
-sn_mod = 64
+  #subnet ip-buffer
+  #voor latere ip-berekeningen in andere subnets
+  #prefix /26
+  sn_mod = 64
 
-# > netwerkadres omzetten naar decimaal
-netadr_dec = set_dotted(NETADR)
+  # > netwerkadres omzetten naar decimaal
+  netadr_dec = set_dotted(NETADR)
 
-# > basisadres
-basisadres = network(NETADR, sn_mask)
+  # > basisadres
+  basisadres = network(NETADR, sn_mask)
 
-# > subnets berekenen
-subnets = bereken_subnets(netadr_dec)
+  # > subnets berekenen
+  subnets = bereken_subnets(netadr_dec)
 
-# > te voorzien aantal hosts per lokaal
-aantal_hosts = 20
+  # > te voorzien aantal hosts per lokaal
+  aantal_hosts = 20
 
-# ip-adressen netdevices en vlans berekenen
-    
-# > router
-router_ip = get_dotted(subnets[0] + 1)
-#> routerinterfaces
-router_g0 = get_dotted(subnets[0] + 2)
-router_g1 = get_dotted(subnets[0] + 3)
-router_g2 = get_dotted(subnets[0] + 4)
-#> access-pointswitch
-ap_switch_ip = get_dotted(subnets[0] + 5)
-# > backbone switch
-bb_switch_ip = get_dotted(subnets[0] + 6)
-# > server
-server_ip = get_dotted(subnets[0] + 7)
-# > management-vlan
-vlan_man_ip = get_dotted(subnets[0] + 8)
-# > access-point-vlan
-vlan_ap_ip = get_dotted(subnets[0] + 9)
-# > lokaal-vlans
-# > kleine L lijkt op cijfer 1
-vlan_l1_ip = get_dotted(subnets[0] + 10)
-vlan_l2_ip = get_dotted(subnets[0] + 11)
-vlan_l3_ip = get_dotted(subnets[0] + 12)
-vlan_l4_ip = get_dotted(subnets[0] + 13)
-vlan_l5_ip = get_dotted(subnets[0] + 14)
-vlan_l6_ip = get_dotted(subnets[0] + 15)
-vlan_l7_ip = get_dotted(subnets[0] + 16)
-vlan_l8_ip = get_dotted(subnets[0] + 17)
+  # ip-adressen netdevices en vlans berekenen
+      
+  # > router
+  router_ip = get_dotted(subnets[0] + 1)
+  #> routerinterfaces
+  router_g0 = get_dotted(subnets[0] + 2)
+  router_g1 = get_dotted(subnets[0] + 3)
+  router_g2 = get_dotted(subnets[0] + 4)
+  #> access-pointswitch
+  ap_switch_ip = get_dotted(subnets[0] + 5)
+  # > backbone switch
+  bb_switch_ip = get_dotted(subnets[0] + 6)
+  # > server
+  server_ip = get_dotted(subnets[0] + 7)
+  # > management-vlan
+  vlan_man_ip = get_dotted(subnets[0] + 8)
+  # > access-point-vlan
+  vlan_ap_ip = get_dotted(subnets[0] + 9)
+  # > lokaal-vlans
+  # > kleine L lijkt op cijfer 1
+  vlan_l1_ip = get_dotted(subnets[0] + 10)
+  vlan_l2_ip = get_dotted(subnets[0] + 11)
+  vlan_l3_ip = get_dotted(subnets[0] + 12)
+  vlan_l4_ip = get_dotted(subnets[0] + 13)
+  vlan_l5_ip = get_dotted(subnets[0] + 14)
+  vlan_l6_ip = get_dotted(subnets[0] + 15)
+  vlan_l7_ip = get_dotted(subnets[0] + 16)
+  vlan_l8_ip = get_dotted(subnets[0] + 17)
 
-#netdevices en vlans toewijzen aan lokaal 0
+  #netdevices en vlans toewijzen aan lokaal 0
 
-adressen = {"lokaal0" : {
-    "name" : "Serverlokaal",
-    "short_name" : "Lokaal0",
-    "network_address" : get_dotted(subnets[0]),
-    "gateway" : router_ip,
-    "rt_int_0" : router_g0,
-    "rt_int_1" : router_g1,
-    "rt_int_2" : router_g2,
-    "ap_switch" : ap_switch_ip,
-    "backbone" : bb_switch_ip,
-    "server" : server_ip,
-    "vlan_man" : vlan_man_ip,
-    "vlan_aps" : vlan_ap_ip,
-    "vlan_l1" : vlan_l1_ip,
-    "vlan_l2" : vlan_l2_ip,
-    "vlan_l3" : vlan_l3_ip,
-    "vlan_l4" : vlan_l4_ip,
-    "vlan_l5" : vlan_l5_ip,
-    "vlan_l6" : vlan_l6_ip,
-    "vlan_l7" : vlan_l7_ip,
-    "vlan_l8" : vlan_l8_ip
-    }
- }    
+  adressen = {"lokaal0" : {
+      "name" : "Serverlokaal",
+      "short_name" : "Lokaal0",
+      "network_address" : get_dotted(subnets[0]),
+      "gateway" : router_ip,
+      "rt_int_0" : router_g0,
+      "rt_int_1" : router_g1,
+      "rt_int_2" : router_g2,
+      "ap_switch" : ap_switch_ip,
+      "backbone" : bb_switch_ip,
+      "server" : server_ip,
+      "vlan_man" : vlan_man_ip,
+      "vlan_aps" : vlan_ap_ip,
+      "vlan_l1" : vlan_l1_ip,
+      "vlan_l2" : vlan_l2_ip,
+      "vlan_l3" : vlan_l3_ip,
+      "vlan_l4" : vlan_l4_ip,
+      "vlan_l5" : vlan_l5_ip,
+      "vlan_l6" : vlan_l6_ip,
+      "vlan_l7" : vlan_l7_ip,
+      "vlan_l8" : vlan_l8_ip
+      }
+  }    
 
-#ip-adressen extra lokalen
-for i in range(LOKALEN):
-    j = i + 1
-    h = i
-    
-#hosts
-    hosts_ip = []
-    for i in range(aantal_hosts):
-        hosts_ip.append(get_dotted(subnets[h] + 3 + i + j * sn_mod))
+  #ip-adressen extra lokalen
+  for i in range(LOKALEN):
+      j = i + 1
+      h = i
+      
+  #hosts
+      hosts_ip = []
+      for i in range(aantal_hosts):
+          hosts_ip.append(get_dotted(subnets[h] + 3 + i + j * sn_mod))
 
-#andere instellingen
+  #andere instellingen
 
-    adressen["lokaal{0}_ip".format(j)] = {
-    "name" : "Leslokaal {0}".format(j),
-    "short_name" : "Lokaal{0}".format(j),
-    "network_address" : get_dotted(subnets[j]),
-    "gateway" : router_ip,
-    "network_mask" : sn_mask,
-    "switch" : get_dotted(subnets[h] + 1 + j * sn_mod),
-    "ap" : get_dotted(subnets[h] + 2 + j * sn_mod),
-    "hosts" : hosts_ip
-    }
+      adressen["lokaal{0}_ip".format(j)] = {
+      "name" : "Leslokaal {0}".format(j),
+      "short_name" : "Lokaal{0}".format(j),
+      "network_address" : get_dotted(subnets[j]),
+      "gateway" : router_ip,
+      "network_mask" : sn_mask,
+      "switch" : get_dotted(subnets[h] + 1 + j * sn_mod),
+      "ap" : get_dotted(subnets[h] + 2 + j * sn_mod),
+      "hosts" : hosts_ip
+      }
 
 # > range voor de hosts
 # > subnet mask
@@ -199,4 +201,4 @@ for i in range(LOKALEN):
 # test
 # print("Instellingen: ", adressen)
 
-print("\n".join("{}\t{}".format(x, y) for y, x in adressen.items()))
+  print("\n".join("{}\t{}".format(x, y) for y, x in adressen.items()))
