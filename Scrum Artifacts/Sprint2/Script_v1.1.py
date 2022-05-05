@@ -118,24 +118,30 @@ aantal_hosts = 20
     
 # > router
 router_ip = get_dotted(subnets[0] + 1)
+#> routerinterfaces
+router_g0 = get_dotted(subnets[0] + 2)
+router_g1 = get_dotted(subnets[0] + 3)
+router_g2 = get_dotted(subnets[0] + 4)
+#> access-pointswitch
+ap_switch_ip = get_dotted(subnets[0] + 5)
 # > backbone switch
-bb_switch_ip = get_dotted(subnets[0] + 2)
+bb_switch_ip = get_dotted(subnets[0] + 6)
 # > server
-server_ip = get_dotted(subnets[0] + 3)
+server_ip = get_dotted(subnets[0] + 7)
 # > management-vlan
-vlan_man_ip = get_dotted(subnets[0] + 4)
+vlan_man_ip = get_dotted(subnets[0] + 8)
 # > access-point-vlan
-vlan_ap_ip = get_dotted(subnets[0] + 5)
+vlan_ap_ip = get_dotted(subnets[0] + 9)
 # > lokaal-vlans
 # > kleine L lijkt op cijfer 1
-vlan_l1_ip = get_dotted(subnets[0] + 6)
-vlan_l2_ip = get_dotted(subnets[0] + 7)
-vlan_l3_ip = get_dotted(subnets[0] + 8)
-vlan_l4_ip = get_dotted(subnets[0] + 9)
-vlan_l5_ip = get_dotted(subnets[0] + 10)
-vlan_l6_ip = get_dotted(subnets[0] + 11)
-vlan_l7_ip = get_dotted(subnets[0] + 12)
-vlan_l8_ip = get_dotted(subnets[0] + 13)
+vlan_l1_ip = get_dotted(subnets[0] + 10)
+vlan_l2_ip = get_dotted(subnets[0] + 11)
+vlan_l3_ip = get_dotted(subnets[0] + 12)
+vlan_l4_ip = get_dotted(subnets[0] + 13)
+vlan_l5_ip = get_dotted(subnets[0] + 14)
+vlan_l6_ip = get_dotted(subnets[0] + 15)
+vlan_l7_ip = get_dotted(subnets[0] + 16)
+vlan_l8_ip = get_dotted(subnets[0] + 17)
 
 #netdevices en vlans toewijzen aan lokaal 0
 
@@ -144,6 +150,10 @@ adressen = {"lokaal0" : {
     "short_name" : "Lokaal0",
     "network_address" : get_dotted(subnets[0]),
     "gateway" : router_ip,
+    "rt_int_0" : router_g0,
+    "rt_int_1" : router_g1,
+    "rt_int_2" : router_g2,
+    "ap_switch" : ap_switch_ip,
     "backbone" : bb_switch_ip,
     "server" : server_ip,
     "vlan_man" : vlan_man_ip,

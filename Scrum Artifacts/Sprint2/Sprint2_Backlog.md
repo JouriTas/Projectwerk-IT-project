@@ -47,9 +47,9 @@ Aanvulling script
 	
 		Subnetmask naar /26: William
 		
-		1 IP-adres per routerpoort
+		1 IP-adres per routerpoort: William (done)
 	
-		1 switch (PoE) voor de APs
+		1 switch (PoE) voor de APs: William (done)
 		
 		Netwerkadres: William (done)
 	
