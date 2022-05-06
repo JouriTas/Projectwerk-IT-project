@@ -1,0 +1,26 @@
+en
+conf terminal
+hostname R1
+enable secret cisco1234
+service password-encryption
+banner motd $This is Router$
+security passwords min-length 10
+login block-for 120 attempts 2 within 30
+no ip domain-lookup
+ip domain-name ccnav6.com
+crypto key generate rsa
+1024
+
+
+interface g0/0
+ip address 192.168.0.1 255.255.255.224
+description loaak_2
+no shutdown
+exit
+
+
+interface g0/1
+ip address 192.168.0.33 255.255.255.224
+description loaak_2
+no shutdown
+exit
