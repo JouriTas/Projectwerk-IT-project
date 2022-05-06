@@ -1,0 +1,28 @@
+enable
+conf terminal
+hostname {{item.hostname}}
+enable secret cisco1234
+service password-encryption
+no ip domain-lookup
+
+line console 0
+password cisco1234
+login
+logging synchronous
+exec-timeout 60
+exit
+
+line vty 0 15
+password cisco1234
+login
+logging synchronous
+exec-timeout 60
+exit
+
+interface vlan 1
+ip address {{item.vlan1}}
+no shutdown
+
+ip default-gateway {{item.gateway}}
+exit
+write
