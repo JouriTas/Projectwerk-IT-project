@@ -5,6 +5,11 @@
 #from distutils.command.config import config
 #import re
 
+#nodig voor yaml
+#import sys
+#import ruamel.yaml
+#from ruamel.yaml import YAML
+
 
 def set_dotted(ip_adres):
     ip_adres_split = ip_adres.split(".")
@@ -202,3 +207,29 @@ else:
 # print("Instellingen: ", adressen)
 
   print("\n".join("{}\t{}".format(x, y) for y, x in adressen.items()))
+#inp = """\
+#- name: "Basisconfig switches"
+  # hosts: localhost
+  # tasks:
+  # - name: "switch config"
+    # TBD:
+      # hosts: "TBD"
+      # port: TBD
+# """
+
+# yaml = YAML()
+# code = ruamel.yaml.round_trip_load(inp, preserve_quotes=True)
+
+# ruamel.yaml.round_trip_dump(code, sys.stdout)
+
+# html
+
+f = open('adressen.html','w')
+
+message = """<html>
+<head></head>
+<body><p>Hello World!</p></body>
+</html>"""
+
+f.write(message)
+f.close()
