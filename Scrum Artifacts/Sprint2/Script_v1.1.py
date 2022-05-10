@@ -1,5 +1,4 @@
-#sprint 1
-#class voor conversie van IP-formaat
+#sprint 2
 
 #uitgezet wegens foutmelding - William
 #from distutils.command.config import config
@@ -9,6 +8,9 @@
 #import sys
 #import ruamel.yaml
 #from ruamel.yaml import YAML
+
+#nodig voor html
+#import pandas as pd
 
 
 def set_dotted(ip_adres):
@@ -75,7 +77,6 @@ sn_masks_ip = {
 
 #NETADR = input('Voer een netwerkadres in: ')
 #test zonder input te vragen
-
 NETADR = "192.168.0.1"
 
 # > aantal lokalen
@@ -222,14 +223,14 @@ else:
 
 # ruamel.yaml.round_trip_dump(code, sys.stdout)
 
+
 # html
 
-f = open('adressen.html','w')
+#f = open('adressen.html', 'w')
 
-message = """<html>
-<head></head>
-<body><p>Hello World!</p></body>
-</html>"""
+#df = pd.DataFrame(data=a)
+#df = df.fillna(' ').T
+#html_output = df.to_html()
 
-f.write(message)
-f.close()
+#f.write(html_output)
+#f.close()
