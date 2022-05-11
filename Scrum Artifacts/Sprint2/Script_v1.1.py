@@ -4,14 +4,12 @@
 #from distutils.command.config import config
 #import re
 
-#nodig voor yaml
-#import sys
-#import ruamel.yaml
-#from ruamel.yaml import YAML
+# nodig voor yaml
+# import ruamel.yaml
+# from ruamel.yaml import YAML
 
-#nodig voor html
-#import pandas as pd
-
+# nodig voor html
+import pandas as pd
 
 def set_dotted(ip_adres):
     ip_adres_split = ip_adres.split(".")
@@ -226,11 +224,11 @@ else:
 
 # html
 
-#f = open('adressen.html', 'w')
+f = open('adressen.html', 'w')
 
-#df = pd.DataFrame(data=a)
-#df = df.fillna(' ').T
-#html_output = df.to_html()
+df = pd.DataFrame(adressen)
+df = df.fillna(' ').T
+html_output = df.to_html()
 
-#f.write(html_output)
-#f.close()
+f.write(html_output)
+f.close()
