@@ -1,5 +1,9 @@
 #sprint 1
 #class voor conversie van IP-formaat
+from distutils.command.config import config
+import re
+
+
 class IP_Adres:
   def __init__(self):
     self._decimaal = 0
@@ -71,29 +75,42 @@ sn_masks_ip = {
 #input
 
 # > netwerkadres
-print('Voer een netwerkadres in: ')
-NETADR = input()
+
+NETADR = input('Voer een netwerkadres in: ')
+
 #test zonder input te vragen
 #NETADR = "192.168.0.1"
 #geldigheid testen
 
 # > aantal lokalen
-print('Voer het aantal lokalen in: ')
-LOKALEN = int(input())
-#test zonder input te vragen
+
+LOKALEN = int(input('Voer het aantal lokalen in: '))
+
 #LOKALEN = 2
+# Voer maximaal 2 lokalen in en minimum 1 lokaal
+
+if LOKALEN <= 0:
+  print("U kunt minimum 1 lokaal configureren")
+
+elif LOKALEN > 2:
+
+  print("U kunt maximum 2 lokalen configureren")
+else:
+
+
+#test zonder input te vragen
 
 # berekeningen
 
 #subnetmask berekenen
-if LOKALEN == 1:
-    sn_mask = sn_masks_ip[32]
-elif LOKALEN == 2:
-    sn_mask = sn_masks_ip[64]
-elif LOKALEN in range(2, 5):
-    sn_mask = sn_masks_ip[128]
-else:
-    sn_mask = sn_masks_ip[256]
+  if LOKALEN == 1:
+      sn_mask = sn_masks_ip[32]
+  elif LOKALEN == 2:
+      sn_mask = sn_masks_ip[64]
+  elif LOKALEN in range(2, 5):
+      sn_mask = sn_masks_ip[128]
+  else:
+      sn_mask = sn_masks_ip[256]
 
 # > netwerkadres omzetten naar decimaal
 netadr_dec = IP_Adres().set_dotted(NETADR)
@@ -148,7 +165,8 @@ for i in range(LOKALEN):
     for i in range(aantal_hosts):
         hosts_ip.append(IP_Adres().get_dotted(subnets[h] + 6 + i))
 
-#andere instellingen    
+#andere instellingen
+
     adressen["lokaal{0}_ip".format(j)] = {
     "name" : "Leslokaal {0}".format(j),
     "short_name" : "Lokaal{0}".format(j),
@@ -161,6 +179,7 @@ for i in range(LOKALEN):
     "ap" : IP_Adres().get_dotted(subnets[h] + 2),
     "hosts" : hosts_ip
     }
+
 #    nwd_ip["Switch 2"] : IP_Adres().get_dotted(subnets[1] + 1)
 #    nwd_ip["Access Point 2"] : IP_Adres().get_dotted(subnets[1] + 2)
 #    for i in range(hosts):
@@ -173,4 +192,6 @@ for i in range(LOKALEN):
 # > default gateway
 
 # test
-print("Instellingen: ", adressen)
+# print("Instellingen: ", adressen)
+
+print("\n".join("{}\t{}".format(x, y) for y, x in adressen.items()))

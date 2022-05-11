@@ -1,0 +1,28 @@
+enable
+conf terminal
+hostname S2
+enable secret cisco1234
+service password-encryption
+no ip domain-lookup
+
+line console 0
+password cisco1234
+login
+logging synchronous
+exec-timeout 60
+exit
+
+line vty 0 15
+password cisco1234
+login
+logging synchronous
+exec-timeout 60
+exit
+
+interface vlan 1
+ip address 192.168.0.34 255.255.255.224
+no shutdown
+
+ip default-gateway 192.168.0.1
+exit
+write
