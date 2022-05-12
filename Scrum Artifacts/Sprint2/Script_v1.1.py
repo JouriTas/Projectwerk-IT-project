@@ -5,10 +5,13 @@
 #import re
 
 # nodig voor yaml
-# import ruamel.yaml
-# from ruamel.yaml import YAML
+# installatie (CLI): pip3 install ruamel.yaml
+import sys
+import ruamel.yaml
+from ruamel.yaml import YAML
 
 # nodig voor html
+# installatie (CLI): pip3 install pandas
 import pandas as pd
 
 def set_dotted(ip_adres):
@@ -206,24 +209,31 @@ else:
 # print("Instellingen: ", adressen)
 
   print("\n".join("{}\t{}".format(x, y) for y, x in adressen.items()))
-#inp = """\
-#- name: "Basisconfig switches"
-  # hosts: localhost
-  # tasks:
-  # - name: "switch config"
-    # TBD:
-      # hosts: "TBD"
-      # port: TBD
-# """
+  
+#===playbook===
+f = open('dev_config.yaml', 'w')
+
+input = """\
+- name: "Basisconfig switches"
+  hosts: localhost
+  tasks:
+  - name: "switch config"
+    TBD:
+      hosts: "TBD"
+      port: TBD
+"""
 
 # yaml = YAML()
-# code = ruamel.yaml.round_trip_load(inp, preserve_quotes=True)
+yaml_output = ruamel.yaml.round_trip_load(input, preserve_quotes=True)
 
-# ruamel.yaml.round_trip_dump(code, sys.stdout)
+# output printen
+ruamel.yaml.round_trip_dump(yaml_output, sys.stdout)
 
+# output wegschrijven
+f.write(str(yaml_output))
+f.close()
 
-# html
-
+#===html===
 f = open('adressen.html', 'w')
 
 df = pd.DataFrame(adressen)
