@@ -213,21 +213,43 @@ else:
 #===playbook===
 f = open('dev_config.yaml', 'w')
 
-input = """\
-- name: "Basisconfig switches"
-  hosts: localhost
-  tasks:
-  - name: "switch config"
-    TBD:
-      hosts: "TBD"
-      port: TBD
-"""
+#lege string om aan te vullen
+yaml_output = ""
 
-# yaml = YAML()
-yaml_output = ruamel.yaml.round_trip_load(input, preserve_quotes=True)
+# router
+yaml_output += """enable
+configure terminal
+hostname R1
+enable secret cisco
+service password-encryption
+banner motd $Authorized access only$
+security passwords min-length 10
+login block-for 120 attempts 2 within 30
+no ip domain-lookup
+ip domain-name {domain_name}
+crypto key generate rsa
+1024
 
-# output printen
-ruamel.yaml.round_trip_dump(yaml_output, sys.stdout)
+interface g0/0
+ip address {g0_ip} {snm}
+description server
+no shutdown
+exit
+
+interface g0/1
+ip address {g1_ip} {snm}
+description access_points
+no shutdown
+exit
+
+interface g0/2
+ip address {g2_ip} {snm}
+description backbone
+no shutdown
+exit""".format(domain_name = "ccnav6.com", g0_ip = router_g0, g1_ip = router_g1, g2_ip = router_g2, snm = sn_mask)
+
+
+
 
 # output wegschrijven
 f.write(str(yaml_output))
