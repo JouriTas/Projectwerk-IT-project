@@ -1,28 +1,40 @@
-enable
+en
 conf terminal
 hostname {{item.hostname}}
-enable secret cisco1234
+enable secret {{item.enable_secret}}
 service password-encryption
-no ip domain-lookup
-
-line console 0
-password cisco1234
-login
-logging synchronous
-exec-timeout 60
-exit
-
 line vty 0 15
-password cisco1234
+password {{item.console_password}}
 login
-logging synchronous
-exec-timeout 60
-exit
+transport input telnet
+banner motd $This is Router$
+security passwords min-length 10
+login block-for 120 attempts 2 within 30
+no ip domain-lookup
+ip domain-name ccnav6.com
+crypto key generate rsa
+1024
 
-interface vlan 1
-ip address {{item.vlan1}}
+interface g0
+ip address {{item.gig0ip}}
+description {{item.lokaal1}}
 no shutdown
-
-ip default-gateway {{item.gateway}}
 exit
-write
+
+interface g1
+ip address {{item.gig1ip}}
+description {{item.lokaal2}}
+no shutdown
+exit
+
+interface g3
+ip address {{item.gig2ip}}
+description {{item.lokaal3}}
+no shutdown
+exit
+
+interface g4
+ip address {{item.gig3ip}}
+description {{item.lokaal4}}
+no shutdown
+exit
