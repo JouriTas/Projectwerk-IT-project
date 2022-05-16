@@ -88,7 +88,6 @@ elif LOKALEN > 8:
 
 else:
 
-
 #subnetmask berekenen
   if LOKALEN == 1:
       sn_mask = sn_masks_ip[32]
