@@ -33,7 +33,7 @@ Aanzet html-weergave: Jouri (done)
 
 Bijwerken topologie: Jouri (done)
 
-Basisconfig ansible: Jouri
+Basisconfig ansible: Jouri (done)
 
 Ansible-script testen in PT
 
