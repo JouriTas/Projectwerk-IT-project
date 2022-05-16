@@ -20,7 +20,7 @@ exec-timeout 60
 exit
 
 interface vlan 1
-ip address 192.168.0.66 255.255.255.224
+ip address 192.168.0.7 255.255.255.224
 no shutdown
 
 ip default-gateway 192.168.0.1
