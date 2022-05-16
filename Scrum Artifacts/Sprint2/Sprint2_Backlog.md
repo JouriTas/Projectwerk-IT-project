@@ -35,7 +35,7 @@ Bijwerken topologie: Jouri (done)
 
 Basisconfig ansible: Jouri (done)
 
-Ansible-script testen in PT
+Ansible-script testen in PT, Copy/paste config (done)
 
 Aanvulling script
 
