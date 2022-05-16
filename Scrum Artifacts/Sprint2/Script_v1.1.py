@@ -1,10 +1,18 @@
-#sprint 1
-#class voor conversie van IP-formaat
+#sprint 2
 
 #uitgezet wegens foutmelding - William
 #from distutils.command.config import config
 #import re
 
+# nodig voor yaml
+# installatie (CLI): pip3 install ruamel.yaml
+import sys
+import ruamel.yaml
+from ruamel.yaml import YAML
+
+# nodig voor html
+# installatie (CLI): pip3 install pandas
+import pandas as pd
 
 def set_dotted(ip_adres):
     ip_adres_split = ip_adres.split(".")
@@ -70,7 +78,6 @@ sn_masks_ip = {
 
 #NETADR = input('Voer een netwerkadres in: ')
 #test zonder input te vragen
-
 NETADR = "192.168.0.1"
 
 # > aantal lokalen
@@ -201,3 +208,58 @@ else:
 # print("Instellingen: ", adressen)
 
   print("\n".join("{}\t{}".format(x, y) for y, x in adressen.items()))
+  
+#===playbook===
+f = open('dev_config.yaml', 'w')
+
+#lege string om aan te vullen
+yaml_output = ""
+
+# router
+yaml_output += """enable
+configure terminal
+hostname R1
+enable secret cisco
+service password-encryption
+banner motd $Authorized access only$
+security passwords min-length 10
+login block-for 120 attempts 2 within 30
+no ip domain-lookup
+ip domain-name {domain_name}
+crypto key generate rsa
+1024
+
+interface g0/0
+ip address {g0_ip} {snm}
+description server
+no shutdown
+exit
+
+interface g0/1
+ip address {g1_ip} {snm}
+description access_points
+no shutdown
+exit
+
+interface g0/2
+ip address {g2_ip} {snm}
+description backbone
+no shutdown
+exit""".format(domain_name = "ccnav6.com", g0_ip = router_g0, g1_ip = router_g1, g2_ip = router_g2, snm = sn_mask)
+
+
+
+
+# output wegschrijven
+f.write(str(yaml_output))
+f.close()
+
+#===html===
+f = open('adressen.html', 'w')
+
+df = pd.DataFrame(adressen)
+df = df.fillna(' ').T
+html_output = df.to_html()
+
+f.write(html_output)
+f.close()

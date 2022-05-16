@@ -33,9 +33,9 @@ Aanzet html-weergave: Jouri (done)
 
 Bijwerken topologie: Jouri (done)
 
-Basisconfig ansible: Jouri
+Basisconfig ansible: Jouri (done)
 
-Ansible-script testen in PT
+Ansible-script testen in PT, Copy/paste config (done)
 
 Aanvulling script
 
@@ -55,7 +55,7 @@ Aanvulling script
 	
 	Ansible-script genereren
 	
-	Html-weergave
+	Html-weergave: William (done)
 	
 
 

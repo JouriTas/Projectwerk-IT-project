@@ -1,0 +1,7 @@
+---
+- name: Generate Router Configuration Files
+  hosts: localhost
+
+  roles:
+   - router
+   - switch
