@@ -10,12 +10,12 @@
 
 # Sprint 2 - 29/04/2022 - 13/05/2022
 
-Script voor de hardware adhv ip-adresseringschema =>
+Script voor de hardware adhv ip-adresseringschema
 
--	Bepalen 2 Vlan's per vestigingsplaats
--	Switches configureren via ansible
--	Routers, Access points
--	Security
+-	Vlans: 1/lokaal + 1 voor APs
+-	Basisconfig router en switches genereren
+-	Config naar html
+-	Foutdetectie input
 
 # Sprint 3 - 13/05/2022 - 20/05/2022
 

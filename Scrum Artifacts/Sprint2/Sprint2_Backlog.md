@@ -16,7 +16,7 @@ Planning Sprint2:
 
 
 -	In een YAML bestand de configuratie uitwerken voor de router en de switchen
-	en via ensible toepassen, telnet acces
+	en via ansible toepassen, telnet acces
 	Testen in packet tracer zowel voor de switch als voor de router
 	
 	
@@ -35,7 +35,7 @@ Bijwerken topologie: Jouri (done)
 
 Basisconfig ansible: Jouri (done)
 
-Ansible-script testen in PT, Copy/paste config (done)
+Ansible-script testen in PT, copy/paste config: Jouri (done)
 
 Aanvulling script
 
