@@ -1,0 +1,40 @@
+en
+conf terminal
+hostname {{item.hostname}}
+enable secret {{item.enable_secret}}
+service password-encryption
+line vty 0 15
+password {{item.console_password}}
+login
+transport input telnet
+banner motd $This is Router$
+security passwords min-length 10
+login block-for 120 attempts 2 within 30
+no ip domain-lookup
+ip domain-name ccnav6.com
+crypto key generate rsa
+1024
+
+interface g0
+ip address {{item.gig0ip}}
+description {{item.lokaal1}}
+no shutdown
+exit
+
+interface g1
+ip address {{item.gig1ip}}
+description {{item.lokaal2}}
+no shutdown
+exit
+
+interface g3
+ip address {{item.gig2ip}}
+description {{item.lokaal3}}
+no shutdown
+exit
+
+interface g4
+ip address {{item.gig3ip}}
+description {{item.lokaal4}}
+no shutdown
+exit
