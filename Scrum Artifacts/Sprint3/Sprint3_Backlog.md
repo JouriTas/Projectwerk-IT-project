@@ -27,13 +27,13 @@ Planning Sprint 3:
 
 # Planning
 
--	Foutdetectie hervatten in het script: William (tussendoor)
+-	Foutdetectie hervatten in het script: William (DONE)
 
 -	Een OS installeren op remote-afstand, bij voorkeur een virtuele machine: Jouri
 
 -	Image van de OS installatie, gekoppeld aan het IP-adres (per host via het script): William
 
--	Ubuntu server basis installatie: Daniel
+-	Ubuntu server basis installatie: Daniel (DONE)
 
 -	Software-installatie, gebruik maken van een open Office (om mee te nemen in docker): Daniel
 
