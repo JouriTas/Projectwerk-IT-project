@@ -1,4 +1,4 @@
-#sprint 2
+#sprint 3
 
 #uitgezet wegens foutmelding - William
 #from distutils.command.config import config
@@ -13,6 +13,10 @@ from ruamel.yaml import YAML
 # nodig voor html
 # installatie (CLI): pip3 install pandas
 import pandas as pd
+
+# nodig voor inputcontrole
+# installatie: pip3 install regex
+import re
 
 def set_dotted(ip_adres):
     ip_adres_split = ip_adres.split(".")
@@ -63,6 +67,15 @@ def bereken_subnets(nw_dec):
     j = i + 1
     subnets.append(nw_dec + 64 * j)
   return subnets
+  
+# ip-adres valideren
+def validate_ip_address(address):
+    match = re.match(r"^(\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3})$", address)
+
+    if bool(match) is False:
+        return False
+
+    return True 
 
 #subnetmask ifv aantal adressen
 sn_masks_ip = {
@@ -76,24 +89,25 @@ sn_masks_ip = {
 
 # > netwerkadres
 
-#NETADR = input('Voer een netwerkadres in: ')
+NETADR = 'Er'
+
+while not validate_ip_address(NETADR):
+    print("{} is geen geldig netwerkadres".format(NETADR))
+    NETADR = input('Voer een netwerkadres in: ')
+
 #test zonder input te vragen
-NETADR = "192.168.0.1"
+#NETADR = "192.168.0.1"
 
 # > aantal lokalen
 
-LOKALEN = int(input('Voer het aantal lokalen in: '))
+LOKALEN = 0
 
 #LOKALEN = 1 tot 8
 # Voer maximaal 8 lokalen in en minimum 1 lokaal
 
-if LOKALEN <= 0:
-  print("U kunt minimum 1 lokaal configureren")
-
-elif LOKALEN > 8:
-  print("U kunt maximum 8 lokalen configureren")
-
-else:
+while LOKALEN not in range(1, 9): 
+  print("U moet 1 - 8 lokalen configureren")
+  LOKALEN = int(input('Voer het aantal lokalen in: '))
 
 #subnetmask berekenen
   if LOKALEN == 1:
