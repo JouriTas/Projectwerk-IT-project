@@ -37,5 +37,5 @@ Planning Sprint 3:
 
 -	Software-installatie, gebruik maken van een open Office (om mee te nemen in docker): Daniel
 
--	Config switch(yaml) toevoegen in script: Jouri (DONE)
+-	Config switch(yaml) toevoegen in script: Jouri 
 
