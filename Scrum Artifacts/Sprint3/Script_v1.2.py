@@ -287,7 +287,7 @@ ip address {vlan1}
 no shutdown
 
 ip default-gateway {gateway}
-exit""".format(hostname = "ccnav6.com", vlan1 = vlan_l1_ip, gateway = router_ip)
+exit""".format(hostname = "Lokaal0", vlan1 = vlan_l1_ip, gateway = router_ip)
 
 
 # output wegschrijven
