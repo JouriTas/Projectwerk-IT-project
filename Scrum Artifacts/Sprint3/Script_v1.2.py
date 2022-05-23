@@ -261,11 +261,38 @@ description backbone
 no shutdown
 exit""".format(domain_name = "ccnav6.com", g0_ip = router_g0, g1_ip = router_g1, g2_ip = router_g2, snm = sn_mask)
 
+#switch
+yaml_output_switch += """enable
+conf terminal
+hostname {hostname}
+enable secret cisco1234
+service password-encryption
+no ip domain-lookup
 
+line console 0
+password cisco1234
+login
+logging synchronous
+exec-timeout 60
+exit
+
+line vty 0 15
+password cisco1234
+login
+logging synchronous
+exec-timeout 60
+exit
+interface vlan 1
+ip address {vlan1}
+no shutdown
+
+ip default-gateway {gateway}
+exit""".format(hostname = "ccnav6.com", vlan1 = vlan_l1_ip, gateway = router_ip)
 
 
 # output wegschrijven
 f.write(str(yaml_output))
+f.write(str(yaml_output_switch))
 f.close()
 
 #===html===
