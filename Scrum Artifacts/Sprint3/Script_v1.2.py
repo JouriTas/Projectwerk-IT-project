@@ -228,6 +228,7 @@ f = open('dev_config.yaml', 'w')
 
 #lege string om aan te vullen
 yaml_output = ""
+yaml_output_switch = ""
 
 # router
 yaml_output += """enable
