@@ -1,4 +1,4 @@
-# Sprint 4 - 20/05/2022 - 27/05/2022
+# Sprint 4 - 25/05/2022 - 03/06/2022
 
 Via docker software installeren op de end-devices:
 
@@ -11,3 +11,15 @@ Creëren =>
 -	Docker container
 
 # Definition of Done
+
+
+-	Informatie opzoeken over docker via verschillende kanalen
+
+-	Docker toepassen op het project, creeren van de docker file, image en container.
+
+-	De nodige software geautomatiseerd installeren op de hosts met OS Windows 10
+
+-	Stappenplan software pushen van Docker => windows hosts
+
+# Planning
+
