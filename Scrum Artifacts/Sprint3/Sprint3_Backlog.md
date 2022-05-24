@@ -39,5 +39,9 @@ Planning Sprint 3:
 
 -	Software-installatie, gebruik maken van een open Office (om mee te nemen in docker): Daniel
 
+<<<<<<< HEAD
 -	Installeer een ISO bestand van Windows 10 op een USB-stick en maak de nodige documentatie (stappenplan): Daniel
+=======
+-	Config switch(yaml) toevoegen in script: Jouri 
+>>>>>>> 5cf339481a1a5c997a994cd61d940edb19afad19
 
