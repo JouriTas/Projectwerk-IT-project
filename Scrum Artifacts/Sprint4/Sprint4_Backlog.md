@@ -13,13 +13,13 @@ Creëren =>
 # Definition of Done
 
 
--	Informatie opzoeken over docker via verschillende kanalen
+-	Informatie opzoeken over docker via verschillende kanalen(Tutorials, youtube, fora, interne documentatie,...)
 
--	Docker toepassen op het project, creeren van de docker file, image en container.
+-	Docker toepassen op het project, creëren van de docker file, image en container.
 
 -	De nodige software geautomatiseerd installeren op de hosts met OS Windows 10
 
--	Stappenplan software pushen van Docker => windows hosts
+-	Stappenplan software van Docker => windows hosts
 
 # Planning
 
