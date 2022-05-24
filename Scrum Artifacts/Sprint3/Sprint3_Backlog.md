@@ -25,15 +25,19 @@ Planning Sprint 3:
 
 -	HTML weergave output van de scripts, weergave adressering per device/categorie
 
+## Alternatieve oplossing voor een OS installatie
+
+- 	Voorzie een manuel om een OS te installeren via USB of CD. Hiermee kunnen we een handmatige installatie uitvoeren
+
 # Planning
 
 -	Foutdetectie hervatten in het script: William (DONE)
-
--	Een OS installeren op remote-afstand, bij voorkeur een virtuele machine: Jouri
 
 -	Image van de OS installatie, gekoppeld aan het IP-adres (per host via het script): William
 
 -	Ubuntu server basis installatie: Daniel (DONE)
 
 -	Software-installatie, gebruik maken van een open Office (om mee te nemen in docker): Daniel
+
+-	Installeer een ISO bestand van Windows 10 op een USB-stick en maak de nodige documentatie (stappenplan): Daniel
 
