@@ -36,4 +36,4 @@ Creëren =>
 
 -	Scripts runnen op de windows hosts:
 
--	Stappenplanuitwerken voor de stakeholders: 
+-	Stappenplan uitwerken voor de stakeholders: 
