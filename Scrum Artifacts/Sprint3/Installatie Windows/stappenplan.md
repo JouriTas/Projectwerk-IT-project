@@ -40,7 +40,7 @@ Zodra de installatie gestart wordt, zal men de standaard configuraties maken zoa
 
 Klik dan op volgende om door te gaan.
 
-
+## Nu installeren
 Klik dan vervolgens op "Nu installeren"
 ![configuratie_2](configuratie_2_windows_10_nu_installeren.png)
 
