@@ -23,7 +23,7 @@ Creëren =>
 
 # Planning
 
--	Informatie opzoeken ( 2 dagen):	
+-	Informatie opzoeken Docker ( 2 dagen):	
 	 
 		Geschreven documentatie: 
 		
