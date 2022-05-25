@@ -58,8 +58,9 @@ Kies vervolgens voor "Aangespast: alleen windows installeren (geavanceerd).
 Selecteer op welke harde schijf en/of partie Windows geïnstalleerd moet worden.
 ![configuratie_6](configuratie_6_windows_10_gewenste_schijf.png)
 ## Installatie uitvoeren
-De installatie wordt uitgevoerd en zal de computer opnieuw opgestart worden. Zorg dat de USB-stick verwijderd wordt nadat de installatie voltooid is.
 ![configuratie_7](configuratie_7_windows_10_installatie_uitvoeren.png)
+De installatie wordt uitgevoerd en zal de computer opnieuw opgestart worden. Zorg dat de USB-stick verwijderd wordt nadat de installatie voltooid is.
+
 
 
 De computer zal een aantal keer herstarten. Vervolgens maakt men de gewenste keuzes in de configuratie van Windows 10. Zodra het voltooid is,
