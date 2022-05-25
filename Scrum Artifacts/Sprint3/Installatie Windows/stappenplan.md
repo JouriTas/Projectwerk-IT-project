@@ -15,7 +15,7 @@ Om een handmatige installatie van een bepaalde Operating Systeem voor te bereide
 ![stap_2](stap_2_installatiemedia_selecteren.png)
 ## Stap 3
     Selecteer de taal, architectuur en editie van Windows die men nodig heeft.
-    Standaard zijn de aanbevolen opties al geselecteerd.
+    Standaard zijn de aanbevolen opties al geselecteerd. Als gebruiker hoeft men geen aanpassingen maken in het architectuur.
 ![stap_3](stap_3_taal_architectuur_en_versie_selecteren.png)
 ## Stap 4
     Selecteer over welke medium men zal gebruiken. De keuze bestaat uit:
@@ -32,8 +32,10 @@ Om een handmatige installatie van een bepaalde Operating Systeem voor te bereide
 
 # Installatie uitvoeren
 
-op een computer waar de harde schijf leeg is (zonder OS), Laat men de computer opstarten via USB. Deze regel moet aangepast worden in de BIOS.
-Ga naar de volgorde van de boot order of boot sequence zodat het eerst via de USB-flashstation opstart.
+op een computer waar de harde schijf leeg is (zonder OS), Laat men de computer opstarten via USB. Deze regel moet aangepast worden in de BIOS. Soms is het niet van toepassing, maar het is aangeraden om dit te controleren.
+
+Ga naar de volgorde van de "boot order" of "boot sequence" zodat het eerst via de USB-flashstation opstart.
+Opmerking: Dit kan gedaan worden met de hulp van een system engineer.
 
 Zodra de installatie gestart wordt, zal men de standaard configuraties maken zoals taal, tijd en toetsenbordindeling.
 ![configuratie_1](configuratie_1_windows_10.png)
@@ -45,10 +47,10 @@ Klik dan vervolgens op "Nu installeren"
 
 ![configuratie_2](configuratie_2_windows_10_nu_installeren.png)
 ## Productcode
-Men kan al het productcode van Windows invoeren. Indien het nog niet van toepassing is, mag men klikken op "Ik heb geen productcode"
+Men kan al het productcode van Windows invoeren. Indien het nog niet van toepassing is, mag men klikken op "Ik heb geen productcode". Na de installatie kan het productcode ook geactiveerd worden via de instellingsysteem van Windows.
 ![configuratie_3](configuratie_3_windows_10_productcode.png)
 ## Windows versie
-Er zijn heel wat versies die men kan kiezen, maar hiervoor kiest men de juiste versie. Bijvoorbeeld als menn windows 10 pro gekocht heeft, kiest men
+Er zijn heel wat versies die men kan kiezen, maar hiervoor kiest men de juiste versie. Bijvoorbeeld als men windows 10 pro gekocht heeft, kiest men
 Windows 10 pro en geen Windows 10 home. Kies geen Windows 10 N.
 ![configuratie_4](configuratie_4_windows_10_versie.png)
 ## Type installatie
@@ -56,11 +58,11 @@ Kies vervolgens voor "Aangespast: alleen windows installeren (geavanceerd).
 ![configuratie_5](configuratie_5_windows_10_type_installatie.png)
 ## Harde schijf selecteren
 Selecteer op welke harde schijf en/of partie Windows geïnstalleerd moet worden.
+Indien er meerdere harde schijven gedetecteerd zijn, kiest men best de eerste schijf.
 ![configuratie_6](configuratie_6_windows_10_gewenste_schijf.png)
 ## Installatie uitvoeren
 ![configuratie_7](configuratie_7_windows_10_installatie_uitvoeren.png)
 De installatie wordt uitgevoerd en zal de computer opnieuw opgestart worden. Zorg dat de USB-stick verwijderd wordt nadat de installatie voltooid is.
-
 
 
 De computer zal een aantal keer herstarten. Vervolgens maakt men de gewenste keuzes in de configuratie van Windows 10. Zodra het voltooid is,
