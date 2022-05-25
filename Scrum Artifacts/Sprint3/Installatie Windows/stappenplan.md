@@ -9,25 +9,25 @@ Om een handmatige installatie van een bepaalde Operating Systeem voor te bereide
     Via de website: https://www.microsoft.com/nl-nl/software-download/windows10
     kan men het hulpprogramma downloaden en kiezen of men op de huidige computer een OS wil installeren
     of een ISO bestand; die men kan bewaren op een USB-stick. Dit is ideaal voor ieder computer die nog geen OS heeft.
-![stap_1!](foto's\stap_1_hulpprogramma_voorbereiden.png)
+![stap_1!](stap_1_hulpprogramma_voorbereiden.png)
 # Stap 2
     Selecteer de installatiemedia (voor een USB-stick)
-![stap_2!](foto's\stap_2_installatiemedia_selecteren.png)
+![stap_2!](stap_2_installatiemedia_selecteren.png)
 # Stap 3
     Selecteer de taal, architectuur en editie van Windows die men nodig heeft.
     Standaard zijn de aanbevolen opties al geselecteerd.
-![stap_3!](foto's\stap_3_taal_architectuur_en_versie_selecteren.png)
+![stap_3!](stap_3_taal_architectuur_en_versie_selecteren.png)
 # Stap 4
     Selecteer over welke medium men zal gebruiken. De keuze bestaat uit:
     -   USB-flashstation
     -   ISO-bestand (om later op een dvd te branden)
-![stap_4!](foto's\stap_4_selecteer_welk_medium.png)
+![stap_4!](stap_4_selecteer_welk_medium.png)
 # Stap 5
     Indien er gekozen werd om via een USB-flashstation te installeren, selecteer de USB-stick waar men een OS wilt bewaren.
-![stap_5!](foto's\stap_5_selecteer_de_USB.png)
+![stap_5!](stap_5_selecteer_de_USB.png)
     Eens geselecteerd, zal het even duren totdat de installatie klaar is om een media voor Windows 10 te maken.
-![stap_6!](foto's\stap_6_installatie_maken.png)
-![stap_7!](foto's\stap_7_installatie_klaar_voltooien.png)
+![stap_6!](stap_6_installatie_maken.png)
+![stap_7!](stap_7_installatie_klaar_voltooien.png)
 
 # Installatie uitvoeren
 
