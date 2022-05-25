@@ -23,11 +23,11 @@ Creëren =>
 
 # Planning
 
--	Informatie opzoeken ( 2 dagen):		Geschreven documentatie: 
--	
-						Tutorials, youtube:
+-	Informatie opzoeken ( 2 dagen):	 Geschreven documentatie: 
+		
+					 Tutorials, youtube:
 						
-						Fora:
+					 Fora:
 					
 									
 -	Theorie omzetten in praktijk, werkende scripts aanmaken:
