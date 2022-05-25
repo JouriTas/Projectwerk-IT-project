@@ -4,7 +4,7 @@ Via docker software installeren op de end-devices:
 
 -	Servers configureren, Ubuntu(Moodle - ELO)
 
-Creëren =>
+Software files creëren =>
 
 -	Docker file
 -	Docker image
