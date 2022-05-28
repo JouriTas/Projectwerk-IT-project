@@ -12,28 +12,25 @@ Software files creëren =>
 
 # Definition of Done
 
-
--	Informatie opzoeken over docker via verschillende kanalen(Tutorials, youtube, fora, interne documentatie,...)
-
 -	Docker toepassen op het project, creëren van de docker file, image en container.
 
--	De nodige software geautomatiseerd installeren op de hosts met OS Windows 10
+-	Python3 geautomatiseerd installeren op de hosts met OS Windows 10
 
--	Stappenplan software van Docker => windows hosts
+-	Installatie Docker software voor de windows hosts
 
 # Planning
 
--	Informatie opzoeken Docker ( 2 dagen):	
+-	Informatie opzoeken Docker deployment application ( 2 dagen):	
 	 
-		Geschreven documentatie: 
+		Geschreven documentatie: Jouri
 		
-		Tutorials, youtube:
+		Tutorials, youtube: Daniel
 						
-		Fora:
+		Fora: William
 					
 									
--	Theorie omzetten in praktijk, werkende scripts aanmaken:
+-	Theorie omzetten in praktijk, werkende scripts aanmaken: TBD
 
--	Scripts runnen op de windows hosts:
+-	Scripts runnen op de windows hosts: TBD
 
--	Stappenplan uitwerken voor de stakeholders: 
+-	Stappenplan uitwerken voor de stakeholders: TBD
