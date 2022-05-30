@@ -29,7 +29,9 @@ Software files creëren =>
 		Fora: William
 					
 									
--	Theorie omzetten in praktijk, werkende scripts aanmaken: TBD
+-	Docker installeren via WSL: William en Daniel
+
+-	Docker en Jenkins installeren in VMware: Jouri
 
 -	Scripts runnen op de windows hosts: TBD
 
