@@ -1,4 +1,4 @@
-# Sprint 4 - 25/05/2022 - 03/06/2022
+# Sprint 4 - 25/05/2022 - 02/06/2022
 
 Via docker software installeren op de end-devices:
 
@@ -31,7 +31,7 @@ Software files creëren =>
 									
 -	Docker installeren via WSL: William en Daniel
 
--	Docker en Jenkins installeren in VMware: Jouri
+-	Docker installeren in VMware: Jouri
 
 -	Scripts runnen op de windows hosts: TBD
 
