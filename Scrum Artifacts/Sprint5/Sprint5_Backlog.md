@@ -2,3 +2,4 @@
 
 - Docker en python3 automatisatie
 - Python3 geautomatiseerd installeren via docker op de client hosts
+- Presentatie voorbereiden
