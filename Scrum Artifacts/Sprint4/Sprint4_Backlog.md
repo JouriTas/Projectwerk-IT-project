@@ -2,8 +2,6 @@
 
 Via docker software installeren op de end-devices:
 
--	Servers configureren, Ubuntu(Moodle - ELO)
-
 Software files creëren =>
 
 -	Docker file
@@ -29,7 +27,7 @@ Software files creëren =>
 		Fora: William
 					
 									
--	Docker installeren via WSL: William en Daniel
+-	Docker installeren via WSL: William en Daniel (DONE)
 
 -	Docker installeren in VMware: Jouri
 
