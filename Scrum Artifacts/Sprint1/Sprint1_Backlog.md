@@ -1,4 +1,4 @@
-# Sprint 1 22/04/2022 - 29/04/2022
+# Sprint 1 - 22/04/2022 - 29/04/2022
 
 - Script opstellen ip-adresseringschema
 - Uittekenen topologie, in kaart voorstelling maken van wat waar nodig is
