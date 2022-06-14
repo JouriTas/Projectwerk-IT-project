@@ -16,7 +16,7 @@ Software files creëren =>
 
 -	Installatie Docker software voor de windows hosts
 
--	Automatisch OS installeren met PXE-boot naar VitrualBox
+-	Automatisch OS installeren met PXE-boot (getest met VirtualBox)
 
 # Planning
 
