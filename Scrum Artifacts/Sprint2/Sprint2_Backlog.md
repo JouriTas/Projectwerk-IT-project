@@ -9,7 +9,7 @@ Script voor de hardware adhv ip-adresseringschema =>
 
 # Definition of done
 
-Planning Sprint2:
+Planning Sprint 2:
 
 -	In het huidig script een berekening maken waarbij we 2 vlan's krijgen als output
 	voor zowel de wired alsook de wireless hosts
