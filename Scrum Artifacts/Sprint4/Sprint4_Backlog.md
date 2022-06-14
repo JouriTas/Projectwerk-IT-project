@@ -16,6 +16,8 @@ Software files creëren =>
 
 -	Installatie Docker software voor de windows hosts
 
+-	Automatisch OS installeren met PXE-boot naar VitrualBox
+
 # Planning
 
 -	Informatie opzoeken Docker deployment application ( 2 dagen):	
