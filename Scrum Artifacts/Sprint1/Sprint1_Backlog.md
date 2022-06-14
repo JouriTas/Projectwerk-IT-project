@@ -5,7 +5,7 @@
 
 # Definition of done
 
-Planning sprint1:
+Planning sprint 1:
 
 - IP-Adresseringschema manueel VLSM (Excel) => (Daniel)
 - Script(Python) => (William en Jouri)
