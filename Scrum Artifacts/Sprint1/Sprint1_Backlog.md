@@ -1,4 +1,4 @@
-# Sprint1_Backlog 22/04/2022 - 29/04/2022
+# Sprint 1 22/04/2022 - 29/04/2022
 
 - Script opstellen ip-adresseringschema
 - Uittekenen topologie, in kaart voorstelling maken van wat waar nodig is
@@ -7,9 +7,8 @@
 
 Planning sprint1:
 
-IP-Adresseringschema manueel VLSM (Excel) => (Daniel)
-
-Script(Python) => (William en Jouri)
+- IP-Adresseringschema manueel VLSM (Excel) => (Daniel)
+- Script(Python) => (William en Jouri)
 
 Input:
 
