@@ -17,7 +17,8 @@ Planning Sprint 2:
 
 -	In een YAML bestand de configuratie uitwerken voor de router en de switchen
 	en via ansible toepassen, telnet access
-	Testen in packet tracer zowel voor de switch als voor de router
+	
+-	Testen in packet tracer zowel voor de switch als voor de router
 	
 	
 -	Routers => Basisconfig maken in ansible, zonder vlan's, enkel telnet access
