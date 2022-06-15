@@ -4,12 +4,6 @@ Installatie:
 
 -	OS-deployment op PC's: ISO bestand van Windows 10 op USB plaatsen voor een manuele installatie
 
-## Te hervatten en om mee te nemen uit sprint 2:
-
--	De huidige bestanden meenemen naar de file van sprint 3 (script, ansible en bijhorende documentaties)
-
--	Foutdetectie in het Python script
-
 # Definition of done
 
 Planning Sprint 3:
@@ -18,6 +12,12 @@ Planning Sprint 3:
 	Inclusief een geldige subnetmask
 
 - 	Voorzie een stappenplan om een OS te installeren via USB of CD. Hiermee kunnen we een handmatige installatie uitvoeren
+
+## Te hervatten en om mee te nemen uit sprint 2:
+
+-	De huidige bestanden meenemen naar de file van sprint 3 (script, ansible en bijhorende documentaties)
+
+-	Foutdetectie in het Python script
 
 
 
