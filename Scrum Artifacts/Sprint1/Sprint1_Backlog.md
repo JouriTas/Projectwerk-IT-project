@@ -7,8 +7,8 @@
 
 Planning sprint 1:
 
-- IP-Adresseringschema manueel VLSM (Excel) => (Daniel)
-- Script(Python) => (William en Jouri)
+- IP-Adresseringschema manueel VLSM (Excel)
+- Script(Python)
 
 Input:
 
@@ -30,9 +30,7 @@ Script ip-adres berekening voor volgende devices:
 - 1 Server
 - Max 20 hosts
 
-
-
-Topologie => (Jouri)
+Topologie
 
 In een visio schema:
 
