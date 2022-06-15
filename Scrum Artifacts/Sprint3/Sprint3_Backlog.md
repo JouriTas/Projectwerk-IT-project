@@ -17,7 +17,7 @@ Planning Sprint 3:
 -	Foutdetectie hervatten waarbij het systeem niet crasht als er een foutieve IP-adres wordt ingevoerd.
 	Inclusief een geldige subnetmask
 
-- 	Voorzie een manuel om een OS te installeren via USB of CD. Hiermee kunnen we een handmatige installatie uitvoeren
+- 	Voorzie een stappenplan om een OS te installeren via USB of CD. Hiermee kunnen we een handmatige installatie uitvoeren
 
 
 
