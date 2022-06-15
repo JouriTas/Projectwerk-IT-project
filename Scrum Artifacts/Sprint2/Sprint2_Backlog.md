@@ -2,7 +2,7 @@
 
 Script voor de hardware adhv ip-adresseringschema =>
 
--	Bepalen Vlan's per lokaal  + 1 voor de acces-point switch
+-	Bepalen Vlan's per lokaal  + 1 voor de access-point switch
 -	Switches configureren via ansible
 -	Routers => basisconfig router
 -	HTML weergave output scripts
@@ -16,11 +16,11 @@ Planning Sprint 2:
 
 
 -	In een YAML bestand de configuratie uitwerken voor de router en de switchen
-	en via ansible toepassen, telnet acces
+	en via ansible toepassen, telnet access
 	Testen in packet tracer zowel voor de switch als voor de router
 	
 	
--	Routers => Basisconfig maken in ansible, zonder vlan's, enkel telnet acces
+-	Routers => Basisconfig maken in ansible, zonder vlan's, enkel telnet access
 
 
 -	HTML weergave output van de scripts, weergave adressering per device/categorie
