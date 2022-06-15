@@ -2,7 +2,7 @@
 
 Via docker software installeren op de end-devices:
 
-Software files creëren =>
+Files creëren =>
 
 -	Docker file
 -	Docker image
